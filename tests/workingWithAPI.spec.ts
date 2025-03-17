@@ -3,9 +3,6 @@ import { json } from "stream/consumers"
 import {log} from "console"
 import fs from 'fs'
 import fetch from 'node-fetch';
-import csvParser from 'csv-parser';
-import xlsx from 'xlsx';
-import path from 'path'
 import { convertDate} from "../utils/dateUtils"
 import { calculateTitleFees } from '../helper/calculateFee'
 import { getExpectedBorrowerNamesCSV,getExpectedNamesFromExcel,sortBorrowerNames , sortBorrowerNamesDescending } from '../helper/jsonHeplerUtility'
@@ -182,7 +179,7 @@ test('TC_003 Compare Co-Borrower Names from Loan Details', async () => {
     }
   });
 
-  // tests/loanDetailsTest.ts
+
 
 
 test('TC_005_Loan Details Fee Calculation',  async () => {
