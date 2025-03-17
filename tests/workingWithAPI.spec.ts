@@ -185,7 +185,7 @@ test('TC_003 Compare Co-Borrower Names from Loan Details', async () => {
   // tests/loanDetailsTest.ts
 
 
-test('Loan Details Fee Calculation',  async () => {
+test('TC_005_Loan Details Fee Calculation',  async () => {
         const feeTotal = await calculateTitleFees();
         console.log(`Total Fee: ${feeTotal}`);
         // Add assertions if necessary
@@ -193,7 +193,7 @@ test('Loan Details Fee Calculation',  async () => {
 
     
    
-    test('Verify Sorting on Borrower Names Fetched from API Response (Ascending Order)', async () => {
+    test('TC_006_Verify Sorting on Borrower Names Fetched from API Response (Ascending Order)', async () => {
       // Fetch loan details from the API using the helper function
       const loanDetails = await fetchLoanDetails();
     
@@ -209,7 +209,7 @@ test('Loan Details Fee Calculation',  async () => {
       expect(sortedBorrowerNames).toEqual(expectedArray);
     });
 
-    test.only('Verify Sorting on Borrower Names Fetched from API Response (Descending Order)', async () => {
+    test('TC_007_Verify Sorting on Borrower Names Fetched from API Response (Descending Order)', async () => {
       // Fetch loan details from the API using the helper function
       const loanDetails = await fetchLoanDetails();
       
